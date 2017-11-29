@@ -329,6 +329,10 @@ class BpFingerprintDaemon : public BpInterface<IFingerprintDaemon> {
         }
 };
 
+<<<<<<< HEAD
 IMPLEMENT_META_INTERFACE(FingerprintDaemon, "android.hardware.fingerprint.IFingerprintDaemon");
+=======
+IMPLEMENT_META_INTERFACE(FingerprintDaemon, "android.hardware.fingerprint.IFingerprintCustomDaemon");
+>>>>>>> 25f0a52... msm8956: Add custom biometrics to fix goodix fpsensor
 
 }; // namespace android
