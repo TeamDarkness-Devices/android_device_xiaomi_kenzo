@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd
+    fingerprintd \
     android.hardware.biometrics.fingerprint@2.0-service-custom
 
 # FM
@@ -336,7 +336,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_camera \
     libshims_ims \
-    libshims_get_process_name
+    libshims_get_process_name \
     libshims_sensor
 
 # Ramdisk
