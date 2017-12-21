@@ -231,6 +231,9 @@ TARGET_RIL_VARIANT := caf
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+#Dependencies
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_HAS_QCOM_WLAN         := true
