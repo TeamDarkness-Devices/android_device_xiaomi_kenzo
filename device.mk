@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
