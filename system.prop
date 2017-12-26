@@ -134,3 +134,6 @@ ro.adb.secure=0
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=adb
+
+#Maintainer 
+ro.aos.maintainer=TheDarkStrix(Manoj)
