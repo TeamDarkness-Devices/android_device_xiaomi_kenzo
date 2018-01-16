@@ -23,6 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common ATOMIC stuff.
 $(call inherit-product, vendor/aos/config/common.mk)
+$(call inherit-product, vendor/aos/config/caf_fw.mk)
 
 # Inherit from kenzo device
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
