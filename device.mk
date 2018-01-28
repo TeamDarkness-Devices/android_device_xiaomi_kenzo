@@ -397,3 +397,9 @@ PRODUCT_COPY_FILES += \
 
 #RescueParty
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.enable_rescue=false
+
+#aosOTA
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.romname=ATOMIC-OS \
+    ro.ota.version=$(shell date +"%Y%m%d") \
+    ro.ota.manifest=https://raw.githubusercontent.com/TeamDarkness-Devices/ota_devices/master/kenzo.xml
