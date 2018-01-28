@@ -26,7 +26,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 CM_ROOT="$MY_DIR"/../../..
 
-HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
+HELPER="$AOS_ROOT"/vendor/aos/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -34,7 +34,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for common
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true" "$1"
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$AOS_ROOT" "true" "$1"
 
 # Copyright headers and guards
 write_headers "kenzo hydrogen"
@@ -48,7 +48,7 @@ write_footers
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" "false" "$1"
+    setup_vendor "$DEVICE" "$VENDOR" "$AOS_ROOT" "false" "$1"
 
     # Copyright headers and guards
     write_headers
