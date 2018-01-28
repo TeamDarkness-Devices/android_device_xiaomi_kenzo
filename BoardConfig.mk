@@ -110,7 +110,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
+    hardware/lineage/lineagehw \
     $(DEVICE_PATH)/cmhw
 
 # CNE
