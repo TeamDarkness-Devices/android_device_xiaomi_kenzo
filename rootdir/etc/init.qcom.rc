@@ -580,6 +580,7 @@ on property:init.svc.zygote=restarting
 
 on charger
     start hvdcp_opti
+    start thermal-engine
 
 service adsprpcd /system/bin/adsprpcd
     class main
